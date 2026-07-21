@@ -1,33 +1,71 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { useTheme } from "@/src/context/ThemeContext";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+import { Tabs } from "expo-router";
+export default function TabsLayout() {
+  const { colors } = useTheme();
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+        headerShown: true,
+        tabBarActiveTintColor: colors.primary,
+        tabBarInactiveTintColor: "#666",
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          headerShown: false,
+          tabBarIcon: ({ focused, size, color }) => (
+            <MaterialCommunityIcons
+              name={focused ? "home" : "home-outline"}
+              size={focused ? size + 4 : size}
+              color={color}
+            />
+          ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="category"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          headerShown: false,
+          tabBarIcon: ({ focused, size, color }) => (
+            <MaterialCommunityIcons
+              name={focused ? "view-grid" : "view-grid-outline"}
+              size={focused ? size + 4 : size}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="cart"
+        options={{
+          title: "My Cart",
+          headerTitleAlign: "center",
+          headerTransparent: true,
+
+          tabBarIcon: ({ focused, size, color }) => (
+            <Ionicons
+              name={focused ? "cart" : "cart-outline"}
+              size={focused ? size + 4 : size}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ focused, size, color }) => (
+            <MaterialCommunityIcons
+              name={focused ? "account-circle" : "account-circle-outline"}
+              size={focused ? size + 3 : size}
+              color={color}
+            />
+          ),
         }}
       />
     </Tabs>
