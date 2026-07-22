@@ -1,50 +1,106 @@
-# Welcome to your Expo app 👋
+# 💎 Diva Jewellery App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern jewellery e-commerce mobile application built with React Native, Expo, TypeScript, and Firebase.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+### Authentication
+- Email & Password Sign Up/Login
+- Google Sign In
+- Persistent Authentication
 
-   ```bash
-   npm install
-   ```
+### Shopping Experience
+- Browse jewellery collections
+- Category-based products
+- Product details page
+- Search products
+- Wishlist management
 
-2. Start the app
+### Cart & Checkout
+- Add to Cart
+- Update Quantity
+- Order Summary
+- Checkout Flow
+- Order Success Screen
 
-   ```bash
-   npx expo start
-   ```
+### Order Management
+- Place Orders
+- View Order History
+- View Order Details
+- Order Status Tracking
 
-In the output, you'll find options to open the app in a
+### User Profile
+- Account Details
+- Profile Update
+- Phone Number Validation
+- Address Validation
+- Logout
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Frontend
+- React Native
+- Expo
+- TypeScript
+- Expo Router
+- React Native Paper
 
-## Get a fresh project
+### Backend
+- Firebase Authentication
+- Cloud Firestore
 
-When you're ready, run:
+### State Management
+- Context API
+  - AuthContext
+  - CartContext
+  - WishlistContext
 
-```bash
-npm run reset-project
+## 📱 Screens
+
+- Home
+- Categories
+- Product Details
+- Wishlist
+- Cart
+- Checkout
+- Orders
+- Profile
+- Login
+- Register
+
+## 📂 Project Structure
+
+```text
+app/
+src/
+ ├── components/
+ ├── context/
+ ├── services/
+ ├── config/
+ ├── data/
+ └── types/
+assets/
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🔥 Firebase Setup
+```text
+Create a Firebase Project.
+Enable Authentication.
+Enable Firestore Database.
+Add your Firebase configuration.
+Add google-services.json.
+```
+## 🎯 Future Improvements
+```text
+Product filtering
+Payment gateway integration
+Admin dashboard
+Product reviews & ratings
+Push notifications
+Seller panel
+```
+## 👩‍💻 Author
+```text
+Indujha C
+React Native Developer
+```
+GitHub: https://github.com/indu2809
