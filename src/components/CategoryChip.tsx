@@ -1,6 +1,5 @@
 import { router } from "expo-router";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-
 type CategoryProps = {
   title: string;
   image: any;

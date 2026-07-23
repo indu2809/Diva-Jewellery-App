@@ -56,7 +56,7 @@ export default function Home() {
             </TouchableOpacity>
           </View>
           <ScrollView
-            style={{ gap: 10, padding: 10 }}
+            style={{ gap: 10, padding: 10, backgroundColor: colors.background }}
             horizontal
             pagingEnabled
             showsHorizontalScrollIndicator={false}
