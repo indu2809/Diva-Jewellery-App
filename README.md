@@ -71,15 +71,17 @@ A modern jewellery e-commerce mobile application built with React Native, Expo, 
 ## 📂 Project Structure
 
 ```text
-app/
-src/
- ├── components/
- ├── context/
- ├── services/
- ├── config/
- ├── data/
- └── types/
-assets/
+Diva-Jewellery-App/
+├── app/
+├── assets/
+├── src/
+│   ├── components/
+│   ├── config/
+│   ├── context/
+│   ├── data/
+│   └── services/
+├── package.json
+└── README.md
 ```
 ## 🔥 Firebase Setup
 ```text
@@ -98,6 +100,48 @@ Product reviews & ratings
 Push notifications
 Seller panel
 ```
+## 📸 Screenshots
+
+### Splash Screen
+<img src="assets/screenshots/splash.jpeg" width="250" />
+
+### Register Screen
+<img src="assets/screenshots/register.jpeg" width="250" />
+
+### Login Screen
+<img src="assets/screenshots/login.jpeg" width="250" />
+
+### Home Screen
+<img src="assets/screenshots/home.jpeg" width="250" />
+
+### Category Screen
+<img src="assets/screenshots/category.jpeg" width="250" />
+
+### Product Screen
+<img src="assets/screenshots/product.jpeg" width="250" />
+
+### Wishlist
+<img src="assets/screenshots/wishlist.jpeg" width="250" />
+
+### Cart Screen
+<img src="assets/screenshots/cart.jpeg" width="250" />
+
+### Checkout Screen
+<img src="assets/screenshots/checkout.jpeg" width="250" />
+
+### Order Screen
+<img src="assets/screenshots/successScreen.jpeg" width="250" />
+
+### Order History 
+<img src="assets/screenshots/orders.jpeg" width="250" />
+
+### Order Details Screen
+<img src="assets/screenshots/orderDetails.jpeg" width="250" />
+
+### Profile Screen
+<img src="assets/screenshots/profile.jpeg" width="250" />
+
+
 ## 👩‍💻 Author
 ```text
 Indujha C
